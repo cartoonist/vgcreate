@@ -1,0 +1,87 @@
+node {
+  sequence: "AATCTGTGTAT"
+  id: 1
+}
+node {
+  sequence: "A"
+  id: 2
+}
+node {
+  sequence: "C"
+  id: 3
+}
+node {
+  sequence: "TATATTATTTT"
+  id: 4
+}
+node {
+  sequence: "TTTT"
+  id: 5
+}
+edge {
+  from: 1
+  to: 2
+}
+edge {
+  from: 1
+  to: 3
+}
+edge {
+  from: 2
+  to: 4
+}
+edge {
+  from: 3
+  to: 4
+}
+edge {
+  from: 4
+  to: 5
+}
+path {
+  name: "reference"
+  mapping {
+    position {
+      node_id: 1
+      offset: 0
+    }
+    edit {
+      from_length: 11
+      to_length: 11
+    }
+    rank: 1
+  }
+  mapping {
+    position {
+      node_id: 2
+      offset: 0
+    }
+    edit {
+      from_length: 1
+      to_length: 1
+    }
+    rank: 2
+  }
+  mapping {
+    position {
+      node_id: 4
+      offset: 0
+    }
+    edit {
+      from_length: 11
+      to_length: 11
+    }
+    rank: 3
+  }
+  mapping {
+    position {
+      node_id: 5
+      offset: 0
+    }
+    edit {
+      from_length: 4
+      to_length: 4
+    }
+    rank: 4
+  }
+}
